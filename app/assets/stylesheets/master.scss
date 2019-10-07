@@ -18,16 +18,18 @@ body {
   background: image_url('stardust.png');
 }
 
-.navbar-inverse .navbar-brand {
+.brand {
   font-family: 'Vibes', cursive;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 300;
   color: #ff0ae7;
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-brand:hover {
+.brand:hover {
   color: white;
+  text-decoration: none;
 }
 
 .navbar-inverse .navbar-nav .nav-link:hover {
@@ -77,4 +79,56 @@ body {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.booyah-box {
+  color: white;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  -moz-box-shadow: 1px 1px 2px 2px black;
+  -webkit-box-shadow: 1px 1px 2px 2px black;
+  box-shadow: 1px 1px 2px 2px black;
+  background: image_url('mosaic.png');
+  border: 1px solid #ff0ae7;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin: 10px;
+}
+
+.booyah-box h2 {
+  color: #ff0ae7;
+  font-family: 'Vibes', cursive;
+}
+
+.booyah-box a {
+  color: #ff0ae7;
+  font-size: 20px;
+}
+
+.booyah-box a:hover {
+  color: white;
+}
+
+abbr[title="required"] {
+  display: none;
+}
+
+.text-muted {
+  color: white !important;
+}
+
+.btn-secondary {
+  background: white;
+  color: #ff0ae7;
+  border-color: white;
+}
+
+.btn-secondary:hover {
+  background: image_url('mosaic.png');
+  color: #ff0ae7;
+  border-color: #ff0ae7;
 }
