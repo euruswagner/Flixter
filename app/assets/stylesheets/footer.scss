@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-content-container {
+  flex: 1;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background: image_url('stardust.png');
+  color: #ff0ae7;
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+}
+
+#footer a:hover {
+  color: white;
+  text-decoration: none;
+}
