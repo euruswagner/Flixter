@@ -111,6 +111,7 @@ body {
 
 .booyah-box a:hover {
   color: white;
+  text-decoration: none;
 }
 
 abbr[title="required"] {
@@ -149,3 +150,30 @@ abbr[title="required"] {
   background: #ff0ae7;
 }
 
+.section {
+  border: 1px solid #ff0ae7;
+  -moz-box-shadow: 1px 1px 2px 2px #ff0ae7;
+  -webkit-box-shadow: 1px 1px 2px 2px #ff0ae7;
+  box-shadow: 1px 1px 2px 2px #ff0ae7;
+  padding: 20px;
+}
+
+.lesson {
+  margin-top: 10px;
+  height: 130px;
+}
+
+.lesson a {
+  font-size: 15px;
+}
+
+.lesson a b {
+  font-size: 25px;
+}
+
+.grey {
+  width: 100%;
+  border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+}
