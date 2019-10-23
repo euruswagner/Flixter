@@ -10,6 +10,10 @@ body {
   font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
 
+ul {
+  list-style-type: none;
+}
+
 .navbar {
   font-family: 'Helvetica Neue', Helvetica;
   font-size: 20px;
@@ -179,6 +183,44 @@ abbr[title="required"] {
 .grey {
   width: 100%;
   border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+}
+
+.section-li {
+  border: 1px solid #ff0ae7;
+  -moz-box-shadow: 1px 1px 2px 2px #ff0ae7;
+  -webkit-box-shadow: 1px 1px 2px 2px #ff0ae7;
+  box-shadow: 1px 1px 2px 2px #ff0ae7;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+ul .header {
+  font-size: 30px;
+  margin-left: 0px;
+}
+
+ul .header .fa {
+  font-size: 25px !important;
+}
+
+.lessons li {
+  background: image_url('bg.png');
+  border: 1px solid #ff0ae7;
+  margin: 10px;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.lessons li b {
+  font-size: 25px;
+}
+
+.subtitle {
+  margin-bottom: -15px;
+}
+
+.lesson-title {
+  margin-bottom: -10px;
 }
