@@ -1,5 +1,10 @@
 <script>
   $(function() {
+    $('.new-lesson-button').click(function() {
+      var lessonUrl = $( event.target).data('lesson-url');
+      $('#newLessonForm').attr('action', lessonUrl);
+    });
+
     $('.lessons').sortable({
       update: function( event, ui ) {
         $.ajax({
@@ -10,6 +15,7 @@
         });        
       }
     });
+
     $('.sections').sortable({
       update: function( event, ui) {
         $.ajax({
@@ -35,9 +41,7 @@
   <%= link_to 'Preview As Student', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class="clr" />
 
-  <div class="text-center">
-    <%= link_to 'Add a new section', new_instructor_course_section_path(current_course), class: 'btn btn-secondary btn-lg' %>
-  </div>
+  <%= render :partial => 'add-section' %>
 
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
@@ -48,7 +52,7 @@
             <%= section.title %>
           </div>
           <div class="col text-right">
-            <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'btn btn-secondary btn-sm' %>
+            <%= render :partial => 'add-lesson', locals: { section: section } %>        
           </div>
         </div>
         <ul class="lessons">
@@ -77,3 +81,4 @@
     <% end %>
   </ul>
 </div>
+

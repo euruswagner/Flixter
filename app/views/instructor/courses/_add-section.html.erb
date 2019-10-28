@@ -1,0 +1,27 @@
+<div class="text-center">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#newSectionModal">
+    Add a new section...
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="newSectionModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content booyah-box">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newSectionModalLabel">Add a new section</h5>
+      </div>
+      <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
+        <div class="modal-body">
+          <%= f.input :title %>
+          <br />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit 'Add a section', class: 'btn btn-secondary'%>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
